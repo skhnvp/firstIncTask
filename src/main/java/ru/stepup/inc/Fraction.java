@@ -19,7 +19,7 @@ public class Fraction {
             this.numerator = numerator;
             this.denominator = denominator;
         }
-        System.out.println("Конструктором создана новая дробь: " + this);
+//        System.out.println("Конструктором создана новая дробь: " + this);
     }
 
     public Fraction sum(Fraction f) {
@@ -40,7 +40,7 @@ public class Fraction {
 
     private Fraction sumFractions(Fraction f) {
         if (this.denominator == f.denominator) {
-            System.out.println("Знаменатели равны");
+//            System.out.println("Знаменатели равны");
             return new Fraction(this.numerator + f.numerator, this.denominator);
         }
 
@@ -55,7 +55,7 @@ public class Fraction {
 
     private Fraction minusFractions(Fraction f) {
         if (this.denominator == f.denominator) {
-            System.out.println("Знаменатели равны");
+//            System.out.println("Знаменатели равны");
             return new Fraction(this.numerator - f.numerator, this.denominator);
         }
 
@@ -97,11 +97,11 @@ public class Fraction {
         returnList.add( this.numerator * (returnList.get(0) / this.denominator));
         returnList.add( f.numerator * (returnList.get(0) / f.denominator));
 
-        System.out.println(
-                "\nПервый числитель: " + returnList.get(1)
-                        + "\nВторой числитель: " + returnList.get(2)
-                        + "\nЗнаменатели не равны. Наименьшее общее кратное: " + returnList.get(0)
-        );
+//        System.out.println(
+//                "\nПервый числитель: " + returnList.get(1)
+//                        + "\nВторой числитель: " + returnList.get(2)
+//                        + "\nЗнаменатели не равны. Наименьшее общее кратное: " + returnList.get(0)
+//        );
         return returnList;
     }
 

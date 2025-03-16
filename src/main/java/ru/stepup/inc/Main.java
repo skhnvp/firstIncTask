@@ -26,6 +26,11 @@ public class Main {
         Fraction f2 = new Fraction(2, 5);
         Fraction f3 = new Fraction(7, 8);
 
-        System.out.println("Результат: " + f1.sum(f2).sum(f3).minus(5));
+        System.out.println("Созданы дроби: \n" + f1 + "\n" + f2 + "\n" + f3);
+
+        System.out.println(f1 + " + " + f2 + " = " + f1.sum(f2));
+        System.out.println(f1.sum(f2) + " + " + f3 + " = " + f1.sum(f2).sum(f3));
+
+        System.out.println(f1.sum(f2).sum(f3) + " - 5 " + " = " + f1.sum(f2).sum(f3).minus(5));
     }
 }
