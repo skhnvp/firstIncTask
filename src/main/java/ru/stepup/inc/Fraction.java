@@ -45,13 +45,8 @@ public class Fraction {
         }
 
         List<Integer> fractionsList = toCommonDenominator(f);
-        int commonDenominator = fractionsList.get(0);
-        int firstNumerator = fractionsList.get(1);
-        int secondNumerator = fractionsList.get(2);
 
-        int sumNumerators = firstNumerator + secondNumerator;
-
-        return reductionOfValue(sumNumerators, commonDenominator);
+        return reductionOfValue(fractionsList.get(1) + fractionsList.get(2), fractionsList.get(0));
     }
 
     private Fraction sumInt(int n) {
@@ -66,13 +61,8 @@ public class Fraction {
         }
 
         List<Integer> fractionsList = toCommonDenominator(f);
-        int commonDenominator = fractionsList.get(0);
-        int firstNumerator = fractionsList.get(1);
-        int secondNumerator = fractionsList.get(2);
 
-        int minusNumerators = firstNumerator + secondNumerator;
-
-        return reductionOfValue(minusNumerators, commonDenominator);
+        return reductionOfValue(fractionsList.get(1) - fractionsList.get(2), fractionsList.get(0));
     }
 
     private Fraction minusInt(int n) {
