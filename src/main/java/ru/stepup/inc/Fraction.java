@@ -81,23 +81,23 @@ public class Fraction {
     }
 
     private Fraction reduction(int num,int denom){
-        boolean isNegative = false;
-
-        if (num < 0) {
-            isNegative = true;
-            num *= -1;
-        }
-
-        if (denom % num == 0) { // если 5/15 = 1/3
-            if (isNegative) {
-                return new Fraction(-1, denom / num);
-            }
-            return new Fraction(1, denom / num);
-        }
-
-        if (num % denom == 0) { // если 15/5 = 3/1
-            return new Fraction(num / denom, 1);
-        }
+//        boolean isNegative = false;
+//
+//        if (num < 0) {
+//            isNegative = true;
+//            num *= -1;
+//        }
+//
+//        if (denom % num == 0) { // если 5/15 = 1/3
+//            if (isNegative) {
+//                return new Fraction(-1, denom / num);
+//            }
+//            return new Fraction(1, denom / num);
+//        }
+//
+//        if (num % denom == 0) { // если 15/5 = 3/1
+//            return new Fraction(num / denom, 1);
+//        }
 
         return new Fraction(num, denom);
     }
