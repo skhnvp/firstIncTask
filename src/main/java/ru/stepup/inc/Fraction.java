@@ -50,8 +50,7 @@ public class Fraction {
     }
 
     private Fraction sumInt(int n) {
-        Fraction f = new Fraction(denominator * n, denominator);
-        return sumFractions(f);
+        return sumFractions(new Fraction(denominator * n, denominator));
     }
 
     private Fraction minusFractions(Fraction f) {
@@ -66,8 +65,7 @@ public class Fraction {
     }
 
     private Fraction minusInt(int n) {
-        Fraction f = new Fraction(denominator * n, denominator);
-        return minusFractions(f);
+        return minusFractions(new Fraction(denominator * n, denominator));
     }
 
     private Fraction reductionOfValue(int num, int denom){
