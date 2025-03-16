@@ -107,7 +107,7 @@ public class Fraction {
 
         returnList.add( Math.abs(this.denominator * f.denominator) / euclideAlg(this.denominator, f.denominator));
         returnList.add( this.numerator * (returnList.get(0) / this.denominator));
-        returnList.add( f.numerator * (returnList.get(0) / this.denominator));
+        returnList.add( f.numerator * (returnList.get(0) / f.denominator));
 
         System.out.println(
                 "\nПервый числитель: " + returnList.get(1)
