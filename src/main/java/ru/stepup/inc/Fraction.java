@@ -51,7 +51,7 @@ public class Fraction {
 
         int sumNumerators = firstNumerator + secondNumerator;
 
-        return reduction(sumNumerators, commonDenominator);
+        return reductionOfValue(sumNumerators, commonDenominator);
     }
 
     private Fraction sumInt(int n) {
@@ -72,7 +72,7 @@ public class Fraction {
 
         int minusNumerators = firstNumerator + secondNumerator;
 
-        return reduction(minusNumerators, commonDenominator);
+        return reductionOfValue(minusNumerators, commonDenominator);
     }
 
     private Fraction minusInt(int n) {
@@ -80,7 +80,7 @@ public class Fraction {
         return minusFractions(f);
     }
 
-    private Fraction reduction(int num,int denom){
+    private Fraction reductionOfValue(int num, int denom){
 //        boolean isNegative = false;
 //
 //        if (num < 0) {
